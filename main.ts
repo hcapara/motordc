@@ -1,3 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    pins.servoSetPulse(AnalogPin.P0, 1500)
+    basic.pause(1000)
+    pins.servoWritePin(AnalogPin.P1, 180)
+    basic.pause(1000)
+    pins.servoSetPulse(AnalogPin.P1, 1500)
+    basic.pause(1000)
+    pins.servoWritePin(AnalogPin.P1, 180)
+    basic.pause(1000)
+    pins.servoSetPulse(AnalogPin.P1, 0)
 })
